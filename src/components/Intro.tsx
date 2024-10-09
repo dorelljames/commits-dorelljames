@@ -62,13 +62,19 @@ export function Intro() {
       <SignUpForm />
       <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
         <IconLink
+          target="_blank"
           href="https://www.dorelljames.com"
           icon={BookIcon}
           className="flex-none"
         >
           Personal Website
         </IconLink>
-        <IconLink href="#" icon={GitHubIcon} className="flex-none">
+        <IconLink
+          target="_blank"
+          href="https://github.com/dorelljames/commits-dorelljames"
+          icon={GitHubIcon}
+          className="flex-none"
+        >
           Source Code
         </IconLink>
         <IconLink href="/feed.xml" icon={FeedIcon} className="flex-none">
