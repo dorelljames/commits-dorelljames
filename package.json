@@ -39,6 +39,7 @@
     "unist-util-visit": "^5.0.0"
   },
   "devDependencies": {
+    "@types/mdx": "^2.0.13",
     "eslint": "^8.56.0",
     "eslint-config-next": "^14.0.4",
     "prettier": "^3.3.2",
