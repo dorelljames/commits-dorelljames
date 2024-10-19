@@ -4,6 +4,16 @@ export { Layout as default } from '@/components/Layout'
 
 ---
 
+## Tech Events Aggregator Automated Service {{ date: '2024-10-19T06:24:48.096Z' }}
+
+I have successfully completed the Event Aggregation service, which currently fetches events from Facebook based on the accounts stored in the database. While serverless functions are familiar to me, Supabase's choice of Deno as their runtime provided a valuable learning opportunity.
+
+The service operates on a 15-minute schedule, checking for new events and saving them to the database using the `pg_cron` and `pg_net` extensions. The cron job triggers a Supabase edge function to fetch events from Facebook, and for each account, it calls the edge function to retrieve and store the events in the database.
+
+See the [reference commit here](https://github.com/dorelljames/event-ni/commit/8573f008f260f216d039fa44f820269ce492c7ca)
+
+---
+
 ![](@/images/events-card.png)
 
 ## Tech Events Calendar {{ date: '2024-10-17T02:28:37.105Z' }}
