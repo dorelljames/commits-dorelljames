@@ -7,7 +7,23 @@ import clsx from 'clsx'
 
 import { FormattedDate } from '@/components/FormattedDate'
 
-export const a = Link
+export const a = ({
+  href,
+  children,
+  ...props
+}: {
+  href: string
+  children: React.ReactNode
+}) => {
+  const isExternal =
+    href && (href.startsWith('http://') || href.startsWith('https://'))
+  return (
+    <Link href={href} {...props}>
+      {children}
+      {isExternal && ' ↗'}
+    </Link>
+  )
+}
 
 type ImagePropsWithOptionalAlt = Omit<ImageProps, 'alt'> & { alt?: string }
 
