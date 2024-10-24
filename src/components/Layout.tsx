@@ -3,6 +3,7 @@ import { useId } from 'react'
 import { Intro, IntroFooter } from '@/components/Intro'
 import { StarField } from '@/components/StarField'
 import { ThemeToggle } from '@/components/ThemeToggle'
+import Particles from './Particles'
 
 function Timeline() {
   let id = useId()
@@ -81,7 +82,7 @@ function FixedSidebar({
         <div className="mx-auto max-w-lg lg:mx-0 lg:flex lg:w-96 lg:max-w-none lg:flex-col lg:before:flex-1 lg:before:pt-6">
           <div className="pb-16 pt-20 sm:pb-20 sm:pt-32 lg:py-20">
             <div className="relative">
-              <StarField className="-right-44 top-14" />
+              <Particles />
               {main}
             </div>
           </div>
