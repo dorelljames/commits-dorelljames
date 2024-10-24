@@ -18,7 +18,7 @@ export const a = ({
   const isExternal =
     href && (href.startsWith('http://') || href.startsWith('https://'))
   return (
-    <Link href={href} {...props}>
+    <Link href={href} {...(isExternal ? { target: '_blank' } : {})} {...props}>
       {children}
       {isExternal && ' ↗'}
     </Link>
