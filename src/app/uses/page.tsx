@@ -15,7 +15,7 @@ import {
 
 export default function UsesPage() {
   return (
-    <div className="relative isolate flex flex-auto flex-col items-center justify-center overflow-hidden bg-gray-950">
+    <div className="relative isolate flex flex-auto flex-col items-center justify-center overflow-hidden dark:bg-gray-950">
       <svg
         aria-hidden="true"
         className="absolute left-1/2 top-[-10vh] -z-10 h-[120vh] w-[120vw] min-w-[60rem] -translate-x-1/2"
@@ -49,14 +49,14 @@ function Uses() {
             and other things I recommend.
           </h1>
 
-          <p className="text-muted-foreground mb-12">
+          <p className="mb-12 text-muted-foreground">
             I get asked a lot about the things I use to build software, stay
             productive, or buy to fool myself into thinking I'm being productive
             when I'm really just procrastinating. Here's a big list of all of my
             favorite stuff.
           </p>
 
-          <p className="text-muted-foreground mb-12 text-sm">
+          <p className="mb-12 text-sm text-muted-foreground">
             Last updated on October 31, 2024
           </p>
 
@@ -67,12 +67,12 @@ function Uses() {
               <Card>
                 <CardContent className="p-6">
                   <div className="flex gap-4">
-                    <Monitor className="text-muted-foreground h-12 w-12" />
+                    <Monitor className="h-12 w-12 text-muted-foreground" />
                     <div>
                       <h3 className="font-medium">
                         13&quot; MacBook Air, M1 (2020)
                       </h3>
-                      <p className="text-muted-foreground mt-1">
+                      <p className="mt-1 text-muted-foreground">
                         I was using an Intel MacBook Pro prior to this and the
                         difference is night and day. Can&apos;t complain about
                         how light it is to carry around and I don&apos;t need to
@@ -88,10 +88,10 @@ function Uses() {
                 <Card>
                   <CardContent className="p-6">
                     <div className="flex gap-4">
-                      <Keyboard className="text-muted-foreground h-12 w-12" />
+                      <Keyboard className="h-12 w-12 text-muted-foreground" />
                       <div>
                         <h3 className="font-medium">Nuphy Air 75</h3>
-                        <p className="text-muted-foreground mt-1">
+                        <p className="mt-1 text-muted-foreground">
                           Haven't gone back to traditional keyboards after
                           owning this low profile mechanical keyboard.
                         </p>
@@ -103,10 +103,10 @@ function Uses() {
                 <Card>
                   <CardContent className="p-6">
                     <div className="flex gap-4">
-                      <Mouse className="text-muted-foreground h-12 w-12" />
+                      <Mouse className="h-12 w-12 text-muted-foreground" />
                       <div>
                         <h3 className="font-medium">Logitech GX 502</h3>
-                        <p className="text-muted-foreground mt-1">
+                        <p className="mt-1 text-muted-foreground">
                           It's light compared to other mouse I've owned and it's
                           perfect especially when I want to game on the sides.
                         </p>
@@ -124,10 +124,10 @@ function Uses() {
                 <Card>
                   <CardContent className="p-6">
                     <div className="flex gap-4">
-                      <Terminal className="text-muted-foreground h-12 w-12" />
+                      <Terminal className="h-12 w-12 text-muted-foreground" />
                       <div>
                         <h3 className="font-medium">VS Code</h3>
-                        <p className="text-muted-foreground mt-1">
+                        <p className="mt-1 text-muted-foreground">
                           I&apos;m a long time user of Sublime Text and
                           I&apos;ve been using VS Code for a while now and
                           it&apos;s been a great replacement.
@@ -140,10 +140,10 @@ function Uses() {
                 <Card>
                   <CardContent className="p-6">
                     <div className="flex gap-4">
-                      <Terminal className="text-muted-foreground h-12 w-12" />
+                      <Terminal className="h-12 w-12 text-muted-foreground" />
                       <div>
                         <h3 className="font-medium">Warp</h3>
-                        <p className="text-muted-foreground mt-1">
+                        <p className="mt-1 text-muted-foreground">
                           I&apos;ve been using Warp for a while now and
                           it&apos;s been a great replacement for the default
                           macOS Terminal and iTerm2.
@@ -162,10 +162,10 @@ function Uses() {
                 <Card>
                   <CardContent className="p-6">
                     <div className="flex gap-4">
-                      <Zap className="text-muted-foreground h-12 w-12" />
+                      <Zap className="h-12 w-12 text-muted-foreground" />
                       <div>
                         <h3 className="font-medium">Raycast</h3>
-                        <p className="text-muted-foreground mt-1">
+                        <p className="mt-1 text-muted-foreground">
                           This is my favorite application launcher. It's fast,
                           has a minimalistic design, and has a lot of plugins to
                           extend its functionality. Everything I need is just a
@@ -179,10 +179,10 @@ function Uses() {
                 <Card>
                   <CardContent className="p-6">
                     <div className="flex gap-4">
-                      <Calendar className="text-muted-foreground h-12 w-12" />
+                      <Calendar className="h-12 w-12 text-muted-foreground" />
                       <div>
                         <h3 className="font-medium">Cal.com</h3>
-                        <p className="text-muted-foreground mt-1">
+                        <p className="mt-1 text-muted-foreground">
                           Great tool for scheduling meetings while protecting my
                           calendar and making sure I still have lots of time for
                           deep work during the week.
@@ -195,12 +195,12 @@ function Uses() {
                 <Card>
                   <CardContent className="p-6">
                     <div className="flex gap-4">
-                      <Focus className="text-muted-foreground h-6 w-6" />
+                      <Focus className="h-6 w-6 text-muted-foreground" />
                       <div>
                         <h3 className="font-medium">
                           Be Focused - Pomodoro Timer
                         </h3>
-                        <p className="text-muted-foreground mt-1">
+                        <p className="mt-1 text-muted-foreground">
                           When I really want to be really productive, I do quick
                           sprints with this app.
                         </p>
@@ -218,10 +218,10 @@ function Uses() {
                 <Card>
                   <CardContent className="p-6">
                     <div className="flex gap-4">
-                      <FigmaIcon className="text-muted-foreground h-12 w-12" />
+                      <FigmaIcon className="h-12 w-12 text-muted-foreground" />
                       <div>
                         <h3 className="font-medium">Figma</h3>
-                        <p className="text-muted-foreground mt-1">
+                        <p className="mt-1 text-muted-foreground">
                           I used Photoshop for a long time but Figma has become
                           my go-to design tool for UI/UX design. I particularly
                           use it for designing event banners for say Facebook
@@ -235,10 +235,10 @@ function Uses() {
                 <Card>
                   <CardContent className="p-6">
                     <div className="flex gap-4">
-                      <Video className="text-muted-foreground h-12 w-12" />
+                      <Video className="h-12 w-12 text-muted-foreground" />
                       <div>
                         <h3 className="font-medium">Screen Studio</h3>
-                        <p className="text-muted-foreground mt-1">
+                        <p className="mt-1 text-muted-foreground">
                           Creating a smooth video for my content is a breeze
                           with Screen Studio.
                         </p>
