@@ -237,11 +237,25 @@ function Uses() {
                     <div className="flex gap-4">
                       <Video className="h-12 w-12 text-muted-foreground" />
                       <div>
-                        <h3 className="font-medium">Screen Studio</h3>
-                        <p className="mt-1 text-muted-foreground">
+                        <h3 className="font-medium">
+                          <a
+                            href="https://screenstudio.lemonsqueezy.com?aff=le2oR"
+                            target="_blank"
+                          >
+                            Screen Studio
+                          </a>
+                        </h3>
+                        <p className="mb-2 mt-1 text-muted-foreground">
                           Creating a smooth video for my content is a breeze
                           with Screen Studio.
                         </p>
+                        <a
+                          className="mt-4"
+                          target="_blank"
+                          href="https://screenstudio.lemonsqueezy.com?aff=le2oR"
+                        >
+                          Grab yours here!
+                        </a>
                       </div>
                     </div>
                   </CardContent>
