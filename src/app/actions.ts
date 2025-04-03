@@ -25,26 +25,52 @@ export async function createContact(
   }
 
   const { email } = validatedFields.data
+  const formId = '7873837' // Replace with your ConvertKit Form ID if different
+  const apiKey = process.env.CONVERTKIT_API_KEY // Read API Key from environment variable
+
+  // Add a check to ensure the API key is available
+  if (!apiKey) {
+    console.error('ConvertKit API Key is missing from environment variables.')
+    return {
+      message: 'Configuration error. Please contact support.',
+    }
+  }
 
   try {
-    fetch(`https://api.hubapi.com/crm/v3/objects/contacts`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${process.env.HUBSPOT_API_KEY}`,
-      },
-      body: JSON.stringify({
-        properties: {
-          email,
+    const response = await fetch(
+      `https://api.convertkit.com/v3/forms/${formId}/subscribe`,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json; charset=utf-8',
         },
-      }),
-    })
+        body: JSON.stringify({
+          api_key: apiKey,
+          email: email,
+        }),
+      },
+    )
+
+    if (!response.ok) {
+      // Log the error response from ConvertKit for debugging
+      const errorData = await response
+        .json()
+        .catch(() => ({ message: 'Failed to parse error response' }))
+      console.error('ConvertKit API Error:', errorData)
+      throw new Error(
+        `ConvertKit API request failed with status ${response.status}`,
+      )
+    }
 
     revalidatePath('/')
-    return { message: 'Awesome! Expect some updates in your inbox soon... 🦖' }
-  } catch (error) {
     return {
-      message: 'Failed to get sign up!',
+      message:
+        'Awesome! Check your inbox to confirm your email to get started... 🦖',
+    }
+  } catch (error) {
+    console.error('ConvertKit Error:', error) // Log the actual error
+    return {
+      message: 'Failed to sign you up. Please try again later.', // Updated error message
     }
   }
 }
