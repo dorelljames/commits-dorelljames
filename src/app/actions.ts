@@ -65,7 +65,7 @@ export async function createContact(
     revalidatePath('/')
     return {
       message:
-        'Awesome! Check your inbox to confirm your email to get started... 🦖',
+        'Awesome! Please check your inbox to confirm your subscription. 🦖',
     }
   } catch (error) {
     console.error('ConvertKit Error:', error) // Log the actual error
