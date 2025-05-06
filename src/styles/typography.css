@@ -27,6 +27,10 @@
   --shiki-token-function: theme(colors.violet.300);
   --shiki-token-string-expression: theme(colors.emerald.300);
   --shiki-token-punctuation: theme(colors.gray.200);
+  --shiki-token-json-property: theme(colors.sky.300);
+  --shiki-token-numeric: theme(colors.pink.300);
+  --shiki-token-boolean: theme(colors.violet.300);
+  --shiki-token-null: theme(colors.red.300);
 
   .dark & {
     --typography-body: theme(colors.gray.300);
@@ -47,6 +51,23 @@
     --typography-hr: theme(colors.white / 0.1);
     --typography-th-borders: theme(colors.white / 0.1);
     --typography-td-borders: theme(colors.white / 0.05);
+  }
+
+  /* JSON specific styling */
+  .language-json .property {
+    color: var(--shiki-token-json-property);
+  }
+
+  .language-json .number {
+    color: var(--shiki-token-numeric);
+  }
+
+  .language-json .boolean {
+    color: var(--shiki-token-boolean);
+  }
+
+  .language-json .null {
+    color: var(--shiki-token-null);
   }
 
   color: var(--typography-body);
@@ -170,6 +191,27 @@
     font-size: 0.8125rem;
     line-height: theme(lineHeight.6);
     color: var(--typography-pre);
+  }
+
+  /* JSON syntax highlighting */
+  pre code .property {
+    color: var(--shiki-token-json-property);
+  }
+
+  pre code .number {
+    color: var(--shiki-token-numeric);
+  }
+
+  pre code .boolean {
+    color: var(--shiki-token-boolean);
+  }
+
+  pre code .null {
+    color: var(--shiki-token-null);
+  }
+
+  pre code .string {
+    color: var(--shiki-token-string);
   }
 
   /* <hr> */
