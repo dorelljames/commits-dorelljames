@@ -1,17 +1,18 @@
-/* eslint-disable react/no-unescaped-entities */
-import { StarField } from '@/components/StarField'
-import { Card, CardContent } from '@/components/ui/card'
 import {
-  Monitor,
+  Calendar,
+  FigmaIcon,
+  Focus,
   Keyboard,
+  Monitor,
   Mouse,
   Terminal,
-  Zap,
-  Calendar,
-  Focus,
   Video,
-  FigmaIcon,
+  Zap,
 } from 'lucide-react'
+import { Card, CardContent } from '@/components/ui/card'
+
+/* eslint-disable react/no-unescaped-entities */
+import { StarField } from '@/components/StarField'
 
 export default function UsesPage() {
   return (
@@ -57,27 +58,27 @@ function Uses() {
           </p>
 
           <p className="mb-12 text-sm text-muted-foreground">
-            Last updated on October 31, 2024
+            Last updated on August 20, 2025
           </p>
 
           <div className="space-y-12">
             {/* Workstation Section */}
             <section>
               <h2 className="mb-4 text-lg font-semibold">Workstation</h2>
+
               <Card>
                 <CardContent className="p-6">
                   <div className="flex gap-4">
                     <Monitor className="h-12 w-12 text-muted-foreground" />
                     <div>
                       <h3 className="font-medium">
-                        13&quot; MacBook Air, M1 (2020)
+                        14&quot; MacBook Pro with M4 Pro (Nov 2024)
                       </h3>
                       <p className="mt-1 text-muted-foreground">
-                        I was using an Intel MacBook Pro prior to this and the
-                        difference is night and day. Can&apos;t complain about
-                        how light it is to carry around and I don&apos;t need to
-                        find an outlet to charge because this can last for 6
-                        hours at minimum.
+                        I had a 13" Macbook Air M1 before this. This feels
+                        heavier though for every day carry but I got used to it.
+                        No complains, truly a beast. Would have been better if I
+                        opted and chosed the max specs to run LLMs locally. 😅
                       </p>
                     </div>
                   </div>
@@ -126,11 +127,10 @@ function Uses() {
                     <div className="flex gap-4">
                       <Terminal className="h-12 w-12 text-muted-foreground" />
                       <div>
-                        <h3 className="font-medium">VS Code</h3>
+                        <h3 className="font-medium">Cursor</h3>
                         <p className="mt-1 text-muted-foreground">
-                          I&apos;m a long time user of Sublime Text and
-                          I&apos;ve been using VS Code for a while now and
-                          it&apos;s been a great replacement.
+                          Been using VS Code but I found myself using Cursor
+                          these days. Before this, I was using Sublime Text.
                         </p>
                       </div>
                     </div>
